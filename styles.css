@@ -1,8 +1,40 @@
 .header {
-    padding: 30px;
+    padding: 60px;
+    margin: 0px;
     text-align: left;
     background: #2594c8;
-    color: rgb(233, 221, 53);
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.header_img {
+    border-radius: 50%;
+    max-width: 10%;
+}
+
+.site-footer
+{
+    margin-top: auto;
+    text-align: center;
+
+    background-color:#26272b;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
 }
