@@ -78,7 +78,9 @@ html, body {
     padding: 0px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    align-items: center;
+    /* background-color: #ddd; */
+    margin: 5px;
   }
   
   .dropdown-content {
@@ -86,12 +88,16 @@ html, body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    align-items: center;
   }
   
   .dropdown-content a {
     float: none;
-    color: white;
+    text-align: center;
+    color: black;
+    background-color: #ddd;
     padding: 12px 16px;
+    margin: 10px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -106,7 +112,11 @@ html, body {
     display: block;
   }
 
+  .none {
+    display: none;
+  }
 
+/* END */
 
 .page-wrap {
     min-height: 100%;
