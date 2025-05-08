@@ -1,14 +1,15 @@
 .header {
-    padding: 1vw;
+    padding: 1.5vh;
     margin: 0px;
-    text-align: left;
+    text-align: right;
     background: #1d5dff;  
     font-family:Comic Sans MS, Comic Sans, cursive;
     
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:flex-end;
     height: auto;
+    max-height: 20vh;
     /* overflow: hidden; */
 
     position: fixed;
@@ -23,7 +24,7 @@
   .header {
     padding: 1vw;
     margin: 0px;
-    text-align: left;
+    text-align: right;
     background: #1d5dff;  
     font-family:Comic Sans MS, Comic Sans, cursive;
     
@@ -31,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    max-height: 10vw;
+    max-height: 5vh;
     /* overflow: hidden; */
 
     position: fixed;
@@ -44,6 +45,11 @@
     font-size: 1.5vw;
     text-transform: uppercase;
   }
+
+  .dropdown button {
+    display: none;
+  }
+  
 
   .content{
     padding: 10vw;
@@ -65,10 +71,18 @@
       line-height:1.5vw;
       color:#737373;
   }
+
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+  }
 }
 
 .content{
-  padding: 5vw;
+  padding: 7vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +110,7 @@ html, body {
   }
 
 .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
 }
 
@@ -128,18 +142,29 @@ a {
     font-family: inherit;
     align-items: center;
     /* background-color: #ddd; */
-    margin: 5px;
+    margin-right: 8vw;
   }
   
-  .dropdown-content {
-    display: none;
-    background-color: transparent;
-    padding: 3vw;
-  }
+  @media only screen and (max-width: 600px) {
+    .dropdown-content {
+      display: none;
+      background-color: transparent;
+      padding: 3vw;
+    }
   
+
+    .dropdown button {
+      background: transparent;
+      color:white;
+      outline: none;
+      border: none;
+    }
+    
+  }
+
   .dropdown-content a {
     float: none;
-    text-align: left;
+    text-align: right;
     color: white;
     text-transform: uppercase;
     background-color: transparent;
@@ -151,13 +176,7 @@ a {
   
   }
 
-  .dropdown button {
-    background: transparent;
-    color:white;
-    outline: none;
-    border: none;
-  }
-  
+
   .dropdown-content a:hover {
     background-color: rgb(37, 37, 255);
   }
@@ -202,9 +221,9 @@ a {
     border-top: 1px solid rgb(215, 215, 215);
     background-color:transparent;
     padding:5vw 0 2vh;
-    font-size:1vh;
+    font-size:0.8vh;
     line-height:1.5vw;
-    color:#737373;
+    color:#060606;
 }
 
 
