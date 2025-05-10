@@ -6,7 +6,16 @@ fetch(`${basePath}/assets/components/navbar.html`)
     .then(res => res.text())
     .then(data => {
     document.getElementById('navbar').innerHTML = data;
+    setupNavbarLinks();
 });
+
+function setupNavbarLinks() {
+  const prefix = location.hostname.includes('github.io') ? '/DaycareWeb/' : '../../';
+  document.getElementById('Home').href = prefix + 'index.html';
+  document.getElementById('Curriculum').href = prefix + 'pages/curriculum.html';
+  document.getElementById('Enrollment').href = prefix + 'pages/enrollment.html';
+  document.getElementById('About').href = prefix + 'pages/about.html';
+}
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
