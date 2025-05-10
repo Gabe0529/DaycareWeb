@@ -1,0 +1,127 @@
+.header {
+    padding: 1.5vh;
+    margin: 0px;
+    text-align: right;
+    background: #3261d9;  
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    height: auto;
+    max-height: 40vh;
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 10;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  /* Hamburger Button */
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px;
+    background-color: transparent;
+    font-family: inherit;
+    margin-right: 8vw;
+  }
+  
+  /* Allows for mobile Hamburger to work */
+  @media only screen and (max-width: 600px) {
+    .dropdown-content {
+      display: none;
+      background-color: transparent;
+      margin: 4vw;
+    }
+  
+
+    .dropdown button {
+      background: transparent;
+      color:white;
+      outline: none;
+      border: none;
+    }
+    
+  }
+
+  .dropdown-content a {
+    float: none;
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-right: 1.5px solid #1f4bbc;
+    text-decoration: none;
+    display: flex;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    flex-direction: column;
+    justify-items:stretch;  
+  
+  }
+
+
+  .dropdown-content a:hover {
+    background-color: rgb(37, 37, 255);
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .none {
+    display: none;
+  }
+
+/* END */
+
+/* FOR PC USERS */
+@media only screen and (min-width: 600px) {
+  .header {
+    padding: 0vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: 8vh;
+    overflow: hidden;
+  }
+  .dropdown-content {
+    padding: 0vw;
+    font-size: 1vw;
+    text-transform: uppercase;
+  }
+
+  .dropdown button {
+    display: none;
+  }
+  .dropdown-content a:first-child {
+    border-left: 1.5px solid #1f4bbc;
+  }
+    .dropdown .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+  }
+}

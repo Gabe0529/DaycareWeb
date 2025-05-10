@@ -1,3 +1,9 @@
+fetch('../../assets/components/navbar.html')
+    .then(res => res.text())
+    .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+});
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
