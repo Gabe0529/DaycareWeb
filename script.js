@@ -1,4 +1,4 @@
-fetch('gabe0529.github.io/assets/components/navbar.html')
+fetch('/DaycareWeb/assets/components/navbar.html')
     .then(res => res.text())
     .then(data => {
     document.getElementById('navbar').innerHTML = data;
