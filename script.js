@@ -1,4 +1,8 @@
-fetch('DaycareWeb/assets/components/navbar.html')
+const basePath = location.hostname.includes('github.io') 
+  ? '/DaycareWeb' 
+  : '';
+
+fetch(`${basePath}/assets/components/navbar.html`)
     .then(res => res.text())
     .then(data => {
     document.getElementById('navbar').innerHTML = data;
