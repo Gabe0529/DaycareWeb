@@ -15,6 +15,18 @@ function setupNavbarLinks() {
   document.getElementById('Curriculum').href = prefix + 'pages/curriculum.html';
   document.getElementById('Enrollment').href = prefix + 'pages/enrollment.html';
   document.getElementById('About').href = prefix + 'pages/about.html';
+
+
+  let css = document.getElementById("CssLink");
+  if (!css) {
+    css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.id = "CssLink";
+    document.head.appendChild(css);
+  }
+  css.href = prefix + 'assets/components/navbar.css';
+
+  document.getElementById("CssLink").href = prefix + 'assets/components/navbar.css';
 }
 
 /* When the user clicks on the button, 
