@@ -1,6 +1,5 @@
 
 body {
-    margin: 0px;
     height: 100%;
     margin-top: 5.5vh;
     display: flex;
@@ -53,37 +52,6 @@ body {
     float: right;
     overflow: hidden;
 }
-
-
-a {
-  color:white;
-  text-decoration: none;
-}
-
-
-
-
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.site-footer
-{
-    margin-top: auto;
-    text-align: center;
-    height: 10vh;
-    position: relative;
-
-    border-top: 1px solid rgb(215, 215, 215);
-    background-color:transparent;
-    padding:5vw 0 2vh;
-    font-size:0.8vh;
-    line-height:1.5vw;
-    color:#060606;
-}
-
 
 
 /* FOR PC USERS */
