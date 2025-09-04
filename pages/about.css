@@ -6,9 +6,17 @@
 
 .content {
     text-align: center;
-    padding: 200px;
+    padding: 20px;
 }
 
 .p {
     padding: 20px;
+}
+
+/* FOR PC USERS */
+@media only screen and (min-width: 600px) {
+    .content {
+        text-align: center;
+        padding: 400px;
+    }
 }

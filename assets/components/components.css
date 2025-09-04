@@ -8,17 +8,23 @@
     border-radius: 50%;
 }
 
+.contact-info {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2 em;
+  color: white;
+}
+
 .site-footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #1919192b;
+    background-color: #457ac5;
     padding: 4vh;
 }
 
 .social-links a {
-    color: #000000;
+    color: #d1caca;
     text-decoration: none;
     margin: 0 5px;
 }
