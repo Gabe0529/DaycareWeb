@@ -1,36 +1,49 @@
 
 body {
-  height: 100%;
-  margin-top: 5.5vh;
-  display: flex;
-  overflow: auto;
-  flex-direction: column;
+  margin: 0px;
+  margin-top: 6vh;
 }
 
 .content{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .content-boxes {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin: 2vh;
+  margin: 1vh;
   flex-wrap: wrap;
+}
+
+.mission-box {
+  background-color: rgba(179, 179, 231, 0.507);
+  border-radius: 5px;
+  margin: 1vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
 .box {
   margin-bottom: 2vh;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  max-width: 420px;
-  max-height: 400px;
-  background-color: #3261d9;
+  max-width: 45vh;
+  max-height: 50vw;
   border-radius: 12px;
   overflow: hidden;
+}
+h1 {
+  text-align: center;
+}
+
+p{
+  text-align: center;
 }
 
 
@@ -38,14 +51,13 @@ body {
   width: 100%;
   object-fit: cover;
   position: relative;
-  mask-image: linear-gradient(to right, transparent, black 40%, black 100%, transparent);
 }
 
 .box-img {
-  width: 50%;
+  width: auto;
   height: auto;
   object-fit: contain;
-  background-color: #3261d9;
+  background-color: rgb(179, 179, 231);
 }
 
 .dropdown {
@@ -64,13 +76,14 @@ body {
   }
 
   .cover-card {
-    max-width: 3600px;
     max-height: 600px;
     overflow: hidden;
   }
 
   .box {
-    margin-right: 1.5vh;
+    margin: 4vh;
+    max-width: 35vh;
+    max-height: 40vw;
   }
 
   .intro{
@@ -81,5 +94,19 @@ body {
     margin-bottom: 2vw;
   }
 
+  .mission-box {
+    width: 50%;
+    background-color: white;
+    color: rgb(27, 27, 27);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+  }
+
+  .content-boxes {
+    border: 2px rgb(192, 191, 191) solid;
+    background-color: rgba(233, 233, 233, 0.349);
+    border-radius: 15px;
+    padding: 10px;
+  }
 
 }
