@@ -47,7 +47,7 @@ header {
   margin-bottom: 2vh;
   display: flex;
   justify-content: center;
-  max-width: 45vh;
+  max-width: 90vh;
   max-height: 90vw;
   border-radius: 12px;
   overflow: hidden;
@@ -95,7 +95,7 @@ p{
 
   .box {
     margin: 4vh;
-    max-width: 100%;
+    max-width: 40vh;
     max-height: 40vw;
   }
 
