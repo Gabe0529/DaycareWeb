@@ -95,7 +95,7 @@ p{
 
   .box {
     margin: 4vh;
-    max-width: 40vh;
+    max-width: 100%;
     max-height: 40vw;
   }
 
