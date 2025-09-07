@@ -18,18 +18,29 @@ body {
   flex-wrap: wrap;
 }
 
+header {
+  margin: 0px;
+  padding: 0px;
+}
+
 .mission-box {
   background-color: rgba(255, 255, 255, 0.685);
-  color: rgb(27, 27, 27);
+  color:rgba(66, 64, 64, 0.897); 
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5em;
-  border-radius: 12px;
-  border: 2px black solid;
-  margin: 1vw;
+  text-align: center;
+  max-width: 100%;
+  background-color: bisque;
+  margin: 0.8vh;
+  margin-top: 15vw;
+  border-radius: 15px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.Title {
+  color: rgba(39, 38, 38, 0.938);
 }
 
 .box {
@@ -51,9 +62,7 @@ p{
 
 
 .main-page-img {
-  width: 100%;
-  object-fit: cover;
-  position: relative;
+  display: none;
 }
 
 .box-img {
@@ -88,6 +97,13 @@ p{
     margin: 4vh;
     max-width: 40vh;
     max-height: 40vw;
+  }
+
+  .main-page-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
   }
 
   .intro{

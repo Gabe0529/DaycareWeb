@@ -33,98 +33,99 @@ footer{
 
 
 /* NAVBAR */
-.header {
-    padding: 1.5vh;
-    margin: 0px;
-    text-align: right;
-    background: #3261d9f1;  
-    font-family:Comic Sans MS, Comic Sans, cursive;
-    
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    height: auto;
-    max-height: 40vh;
+#navbar {
+  margin: 0px;
+  text-align: right;
+  background: #3261d9f1;  
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+  align-items: center;
+  height: auto;
+  max-height: 40vh;
 
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    left: 0px;
-    z-index: 10;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+  z-index: 10;
 }
 
-.navbar {
-    overflow: hidden;
+
+.logo {
+  margin-right: auto;
+  padding: 5px;
+  height: 50px;
+  width: 60px;
+  opacity: 0;
+}
+
+/* Hamburger Button */
+.dropdown .dropbtn {
+  margin-right: auto;
+  cursor: pointer;
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px;
+  background-color: transparent;
+  font-family: inherit;
+  margin-right: 8vw;
+}
+
+/* Allows for mobile Hamburger to work */
+@media only screen and (max-width: 600px) {
+  .dropdown-content {
+    display: none;
     background-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 4vw;
+  }
+
+  .logo {
+    opacity: 1;
+  }
+
+  .dropdown button {
+    background: transparent;
+    color:white;
+    outline: none;
+    border: none;
+  }
+
 }
 
-.filler {
+.dropdown-content a {
+  float: none;
+  text-align: right;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-decoration: none;
+  display: flex;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  flex-direction: column;
+  justify-items:stretch;  
+
+}
+
+
+.dropdown-content a:hover {
+  background-color: rgba(51, 51, 231, 0.699);
+}
+
+.show {
+  display: block;
+}
+
+.none {
   display: none;
 }
-    /* Hamburger Button */
-    .dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 20px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0px;
-    background-color: transparent;
-    font-family: inherit;
-    margin-right: 8vw;
-    }
-
-    /* Allows for mobile Hamburger to work */
-    @media only screen and (max-width: 600px) {
-    .dropdown-content {
-        display: none;
-        background-color: transparent;
-        margin: 4vw;
-    }
-
-
-    .dropdown button {
-        background: transparent;
-        color:white;
-        outline: none;
-        border: none;
-    }
-
-    }
-
-    .dropdown-content a {
-    float: none;
-    text-align: right;
-    color: white;
-    text-transform: uppercase;
-    background-color: transparent;
-    text-decoration: none;
-    display: flex;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    flex-direction: column;
-    justify-items:stretch;  
-
-    }
-
-
-    .dropdown-content a:hover {
-    background-color: rgba(51, 51, 231, 0.699);
-    }
-
-    .show {
-    display: block;
-    }
-
-    .none {
-    display: none;
-    }
 
 /* END */
 

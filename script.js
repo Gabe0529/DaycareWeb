@@ -36,6 +36,7 @@ function setupNavbarLinks() {
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
     document.getElementById("myBtn").classList.toggle("none");
+    document.getElementById("logo").style.opacity = "0";
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -48,8 +49,10 @@ window.onclick = function(e) {
     }
     if (!e.target.matches('.dropbtn')) {
         var myBtn = document.getElementById("myBtn");
-        if (myBtn.classList.contains('none')) {
-        myBtn.classList.remove('none');
+        var logo = document.getElementById("logo");
+        if (myBtn.classList.contains('none') && logo.style.opacity == "0") {
+          myBtn.classList.remove('none');
+          logo.style.opacity = "1";
       }
     }
 }
