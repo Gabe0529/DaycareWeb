@@ -28,15 +28,16 @@ header {
   color:rgba(66, 64, 64, 0.897); 
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.2em;
-  text-align: center;
+  text-align: justify;
   max-width: 100%;
   background-color: rgb(255, 255, 255);
-  margin: 0.8vh;
+  margin: 1vh;
   border-radius: 15px;
-  padding: 2px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-weight: 300;
 }
 .title {
   color: rgba(61, 60, 60, 0.938);
@@ -47,22 +48,11 @@ header {
   border-radius: 12px;
   overflow: hidden;
 }
-p {
-  margin: 0.5em;
-}
+
 h1 {
   font-weight: 500;
 }
 
-p{
-  text-align: center;
-  font-weight: 300;
-}
-
-
-.main-page-img {
-  display: none;
-}
 
 .box-img {
   max-width: 100%;

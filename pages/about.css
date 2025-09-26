@@ -5,30 +5,26 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    max-width: 60vw;
-    margin: auto;
+    text-align: justify;
+    margin: 20px;
 }
 
 .cover-img {
     max-width: 100%;
-    padding: 20px;
 }
 
 h1 {
-    margin: 10px;
+    margin: 5px;
     font-weight: lighter;
-    color:rgba(0, 0, 0, 0.897); 
+    color:rgb(0, 0, 0); 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-self: flex-start;
+    font-size: 1.8em;
 }
 h2 {
     font-weight: lighter;
-    color:rgba(0, 0, 0, 0.897); 
+    font-size: 1.5em;
+    color:rgb(0, 0, 0); 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -38,6 +34,7 @@ p {
     color:rgba(0, 0, 0, 0.897);
     font-size: larger;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
 }
 
 body {
@@ -47,7 +44,6 @@ body {
 
 .highlighted-word {
     color: rgba(57, 72, 204, 0.897);
-    padding-left: 10px;
 }
 .title {
     display: flex;
@@ -69,7 +65,24 @@ body {
         border-radius: 5%;
     }
     .content {
-        text-align: center;
         padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        max-width: 60vw;
+        margin: auto;
+    }
+    h1 {
+        font-size: 2em;
+        padding: 5px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.2em;
     }
 }
