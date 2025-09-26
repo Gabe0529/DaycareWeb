@@ -102,6 +102,7 @@ footer{
 .dropdown-content a {
   float: none;
   text-align: right;
+  font-weight: 300;
   color: white;
   text-transform: uppercase;
   background-color: transparent;

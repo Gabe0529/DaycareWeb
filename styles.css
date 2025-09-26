@@ -1,11 +1,11 @@
 
 body {
   margin: 0px;
-  margin-top: 6vh;
 }
 
 .content{
   display: flex;
+  margin-top: 15vw;
   flex-direction: column;
   align-items: center;
   
@@ -27,35 +27,36 @@ header {
   background-color: rgba(255, 255, 255, 0.685);
   color:rgba(66, 64, 64, 0.897); 
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   max-width: 100%;
-  background-color: bisque;
+  background-color: rgb(255, 255, 255);
   margin: 0.8vh;
-  margin-top: 15vw;
   border-radius: 15px;
-  padding: 10px;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.Title {
-  color: rgba(39, 38, 38, 0.938);
+.title {
+  color: rgba(61, 60, 60, 0.938);
 }
 
 .box {
   margin-bottom: 4vw;
-  display: flex;
-  justify-content: center;
   border-radius: 12px;
   overflow: hidden;
 }
+p {
+  margin: 0.5em;
+}
 h1 {
-  text-align: center;
+  font-weight: 500;
 }
 
 p{
   text-align: center;
+  font-weight: 300;
 }
 
 
@@ -70,10 +71,40 @@ p{
 }
 
 .dropdown {
-    float: right;
-    overflow: hidden;
+  float: right;
+  overflow: hidden;
 }
 
+.cover-card {
+  position: relative;
+  font-size: 5vw;
+  font-weight: lighter;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 30vw;
+  width: 100%;
+  background: url('assets/images/placeHolderClassroom.png') no-repeat center center;
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.text-box {
+  text-align: center;
+  color: rgb(46, 46, 46);
+  padding-left: 0vh;
+  font-size: 0.9em;
+}
+
+.highlighted-word {
+    color: rgba(57, 72, 204, 0.897);
+    padding-left: 10px;
+}
 
 /* FOR PC USERS */
 @media only screen and (min-width: 600px) {
@@ -83,28 +114,24 @@ p{
     align-items: center;
     text-align: center;
     width: 100%;
-  }
-
-  .cover-card {
-    max-height: 600px;
-    overflow: hidden;
+    margin: 0px;
   }
 
   .box {
     margin: 4vh;
-    max-width: 40vh;
-    height: 40vw;
+    max-width: 55vh;
+    height: 30vw;
   }
   
   .box-img {
     object-fit: cover;
-    height: auto;
+    height: 30vw;
     width: auto;
     overflow: hidden;
   }
 
-  .box-img:hover {
-    scale: 1.1;
+  .box:hover {
+    scale: 1.15;
   }
   .main-page-img {
     display: block;
@@ -113,23 +140,38 @@ p{
     position: relative;
   }
 
-  .intro{
-    display: flex;
-    align-items: center;
-    margin: 22vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+  .mission-box {
+    width: 90%;
+    border: none;
+    background-color: transparent;
   }
 
-  .mission-box {
-    width: 65%;
-    margin-top: 5vw;
-    border: none;
+  p {
+    text-align: justify;
+    padding: 10px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
   }
 
   .content-boxes {
-    background-color: rgba(240, 236, 236, 0.842);
     justify-content: center;
   }
 
+  .title {
+    align-self: flex-start;
+    margin-left: 5vh;
+  }
+
+  .cover-card {
+    border-radius: 0%;
+    text-align: justify;
+  }
+  .text-box {
+    display: flex;
+    display: row;
+    text-align: center;
+    align-self: flex-start;
+    color: rgb(46, 46, 46);
+    padding-left: 12vh;
+  }
 }
